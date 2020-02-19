@@ -1,0 +1,123 @@
+
+body{
+
+    background-color: red;
+
+p{
+  font-family: 'Press Start 2P', cursive;
+}
+.header{
+
+    width: 100%;
+    background-color: red;
+    text-align: center;
+
+    #logo{
+
+        width: 24em;
+        height: 15em;
+    }
+}
+.formulario{
+
+    border: black solid;
+    background-color:white;
+    border-radius: 20px;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    
+}
+
+#buscar{
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 6px 20px;
+        border: none;
+        -webkit-border-radius: 32px / 54px;
+        border-radius: 32px / 54px;
+        font: normal 18px/normal "Coda", Helvetica, sans-serif;
+        color: rgba(0,142,198,1);
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        background: rgba(252,252,252,1);
+        -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      }
+      
+      #buscar:hover {
+        background: rgba(232,249,255,1);
+        -webkit-box-shadow: 0 2px 2px 0 rgba(90,90,90,0.2) inset;
+        box-shadow: 0 2px 2px 0 rgba(90,90,90,0.2) inset;
+      }
+      
+      #buscar:focus {
+        background: rgba(255,253,232,1);
+      }
+
+#boton{
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 106px;
+        cursor: pointer;
+        padding: 5px 18px;
+        border: none;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        font: normal normal bold 15px/normal "Battambang", Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-transform: uppercase;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        background: rgb(233, 58, 48);
+        -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+        -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+        -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+        transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+        margin-top: 10px;
+        padding-bottom: 5px;
+      }
+      
+      #boton:focus {
+        background: rgb(229, 17, 17);
+      }
+
+      .resultados{
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+        column-gap: 5%;
+        .pokemon{
+             border-radius: 19px 19px 19px 19px;
+            -moz-border-radius: 9px 9px 9px 9px;
+            -webkit-border-radius: 9px 9px 9px 9px;
+            background-color: white;
+            border: 3px solid;
+            height: 400px;
+            margin: 3%;
+            
+            text-align: center;
+            transition: all 1s;
+
+          .imgPokemon{
+            width: 60%;
+          }
+}
+.pokemon:hover{
+    transition: all 1s;
+    background:  rgba(0,142,198,1);
+}
+      }
+}
