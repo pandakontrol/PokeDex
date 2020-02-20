@@ -5,11 +5,11 @@ sass --watch scss/busqueda.scss:public/css/style.css
 
 
 // Algunas variables y arrays
-
+let contador = 0;
 let arrayPokemon = [];
 let arrayPokemonPro = [];
 let rellenar = [];
-const pokemonUrl = "https://pokeapi.co/api/v2/pokemon";
+const pokemonUrl = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=300";
 
 // Esta es la funcion de filtrado de pokemons
 
@@ -45,6 +45,8 @@ function buscar() {
         //Creamos el elemento P para el nombre del Pokemon
         nombrePokemon = document.createElement("p");
         nombrePokemon.innerText = pokemon.name;
+        nombrePokemon.tabIndex = contador;
+        contador++;
         nombrePokemon.style.textTransform = "uppercase";
 
         // Creamos el elemento P del numero del Pokemón
