@@ -18,6 +18,10 @@ function filtroLetra(elemento) {
     return elemento.name.startsWith(letra);
 }
 
+function minusculas() {
+    document.getElementById("buscar").value = document.getElementById("buscar").value.toLowerCase();
+}
+
 function buscar() {
     //console.log(arrayPokemon[0]);
     // const fetchPromesa = fetch(pokemonUrl);
@@ -90,6 +94,7 @@ function init() {
 
     // Evento en el boton de buscar 
     document.querySelector(`input[type="button"]`).addEventListener("click", buscar);
+    document.querySelector(`input[type="text"]`).addEventListener("input", minusculas);
 
     const fetchPromesa = fetch(pokemonUrl);
     fetchPromesa.then(response => {
