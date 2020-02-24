@@ -6,6 +6,6 @@ port = process.env.PORT;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Escuchemos en un puerto
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(" * La PokeDex esta funcionando en http://localhost:3000");
 });
